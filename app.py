@@ -1,6 +1,6 @@
-print("Hello World!")
+teste = 'FELIPE'
+print("Hello World!" + teste)
 
-teste = 1
 
-if teste:
-    print("oi")
+
+print(teste)
