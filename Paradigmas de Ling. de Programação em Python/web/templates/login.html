@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+  <form id="registro" action="banco.php" method="POST">
+    <div id="main">
+
+      <div id="titulo">
+        <h2>Crie sua conta</h2>
+      </div>
+
+      <label for="nome">Nome :</label>
+      <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo" />
+
+      <label for="cpf">CPF :</label>
+      <input id="cpf" name="cpf" placeholder="Digite seu CPF" />
+
+      <label for="email">Email :</label>
+      <input id="email" name="email" type="text" placeholder="Digite seu email" />
+
+      <label for="senha">Senha :</label>
+      <input id="senha" name="senha" type="password" placeholder="Digite uma senha" />
+
+      <input type="submit" name="acao" value="Cadastrar" onclick="return validar()">
+
+    </div>
+  </form>
+
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border: none;
+    color: #323232;
+  }
+
+
+  input,
+  label {
+    display: block;
+    width: 100%;
+  }
+
+  input:focus,
+  label:focus {
+    outline: none;
+  }
+
+  body {
+    padding-top: 5vh;
+    background-image: url('../IMG/pf1.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+  }
+
+  #main {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffae00;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid #323232;
+    padding-bottom: 10px;
+  }
+
+  #titulo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    border: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+
+  input:hover {
+    background-color: #8eb0bc;
+
+  }
+
+  input[type=submit] {
+    background-color: #000080;
+    color: #FFF;
+    border: 1px solid #323232;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+  }
+
+  input:focus {
+    border-color: #8eb0bc;
+  }
+</style>
+
+</html>
