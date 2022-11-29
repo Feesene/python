@@ -1,6 +1,6 @@
 import psycopg2 as conector
 try:
-    conexao = conector.connect("dbname=meu_banco user=post password=post")
+    conexao = conector.connect("dbname=DB_LITE user=post password=post")
     cursor = conexao.cursor()
 
     comando1 = '''CREATE TABLE Produto (

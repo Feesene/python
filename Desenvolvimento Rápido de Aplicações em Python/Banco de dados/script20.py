@@ -3,7 +3,7 @@ from modelo import Pessoa
 from script19_4 import recuperar_veiculos
 
 # Abertura de conexão e aquisição de cursor
-conexao = conector.connect("./meu_banco.db")
+conexao = conector.connect("./DB_LITE.db")
 cursor = conexao.cursor()
 
 # Definição dos comandos

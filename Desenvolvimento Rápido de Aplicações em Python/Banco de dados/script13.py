@@ -1,6 +1,6 @@
 import sqlite3 as conector
 from modelo import Marca, Veiculo
-conexao = conector.connect("./meu_banco.db")
+conexao = conector.connect("./DB_LITE.db")
 conexao.execute("PRAGMA foreign_keys = on")
 cursor = conexao.cursor()
 

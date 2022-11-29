@@ -2,7 +2,7 @@ import sqlite3 as conector
 from modelo import Veiculo, Marca
 
 # Abertura de conexão e aquisição de cursor
-conexao = conector.connect("./meu_banco.db")
+conexao = conector.connect("./DB_LITE.db")
 cursor = conexao.cursor()
 
 # Definição dos comandos

@@ -1,7 +1,7 @@
 import sqlite3 as conector
 from modelo import Pessoa
 # Abertura de conexão e aquisição de cursor
-conexao = conector.connect("./meu_banco.db", detect_types=conector.PARSE_DECLTYPES)
+conexao = conector.connect("./DB_LITE.db", detect_types=conector.PARSE_DECLTYPES)
 cursor = conexao.cursor()
 
 # Funções conversoras
