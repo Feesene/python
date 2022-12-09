@@ -6,7 +6,7 @@ conexao.execute("PRAGMA foreign_keys = on")
 cursor = conexao.cursor()
 
 # Definição dos comandos
-comando = '''DELETE FROM Pessoa WHERE cpf= 12345678900;'''
+comando = '''DELETE FROM Pessoa WHERE cpf= 46145809;'''
 cursor.execute(comando)
 
 # Efetivação do comando

@@ -7,11 +7,11 @@ cursor = conexao.cursor()
 # Inserção de dados na tabela Marca
 comando1 = '''INSERT INTO Marca (nome, sigla) VALUES (:nome, :sigla);'''
 
-marca1 = Marca("Marca A", "MA")
+marca1 = Marca('', "Marca A", "MA")
 cursor.execute(comando1, vars(marca1))
 marca1.id = cursor.lastrowid
 
-marca2 = Marca("Marca B", "MB")
+marca2 = Marca('', "Marca B", "MB")
 cursor.execute(comando1, vars(marca2))
 marca2.id = cursor.lastrowid
 

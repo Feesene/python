@@ -9,8 +9,7 @@ cursor = conexao.cursor()
 pessoa = Pessoa(20000000099, 'José', '1990-02-28', False)
 
 # Definição de um comando com query parameter
-comando = '''INSERT INTO Pessoa (cpf, nome, nascimento, oculos)
-                    VALUES (:cpf,:nome,:data_nascimento,:usa_oculos);'''
+comando = '''INSERT INTO Pessoa (cpf, nome, nascimento, oculos)VALUES (:cpf,:nome,:data_nascimento,:usa_oculos);'''
 cursor.execute(comando, {"cpf": pessoa.cpf,
                          "nome": pessoa.nome,
                          "data_nascimento": pessoa.data_nascimento,
